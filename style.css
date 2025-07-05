@@ -98,3 +98,27 @@ li:hover {
 .trocarModo i {
     color: var(--texto-color);
 }
+
+/* section de boas vindas */
+#welcome-section {
+    height: calc(100vh - 3em);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section span {
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: var(--titulo-fontFamily);
+    
+    color: var(--titulo-color);
+    animation: DescerTexto 1s ;
+}
+
+#welcome-section .destaque {
+    color: var(--textoDestaque-color);
+    font-weight: 700;
+}

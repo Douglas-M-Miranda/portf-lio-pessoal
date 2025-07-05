@@ -1,0 +1,16 @@
+:root {
+    --titulo-fontFamily: "Montserrat", sans-serif;
+    --texto-fontFamily: "Lato", sans-serif;
+    --texto-color: #c2c2d6;
+    --titulo-color: #f1f1f1;
+    --textoDestaque-color: #1D1933;
+    --backgroundLinkHover: rgba(121, 105, 214, 0.19);
+    --backgroundButton-color: #7969D6;
+    --backgroundButtonActive-color: #7969d68e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

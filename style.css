@@ -30,6 +30,10 @@ body {
     background-attachment: fixed;
 
     height: 100vh;
+
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
@@ -111,14 +115,15 @@ li:hover {
 
 /* section de boas vindas */
 #welcome-section {
-    height: calc(100vh - 3em);
+    height: 100vh;
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 4em;
 }
-    
+
 #welcome-section h1 {
     font-size: 1rem;
     font-weight: 100;
@@ -136,6 +141,11 @@ li:hover {
 /* section Falando sobre mim */
 #apresentacao {
     height: 100vh;
+    width: 95vw;
+    margin: auto;
+    background-color: var(--apresentacao-fundo-background);
+
+    padding: 1em;
 }
 
 #apresentacao h2 {
@@ -146,9 +156,21 @@ li:hover {
     color: var(--subTitulo-color);
 
     text-align: center;
-    padding-top: 1em;
+    margin-bottom: .5em;
 }
 
-.tecnologias img {
-    width: 50px;
+.resumo p {
+    font-size: .9rem;
+    font-family: var(--subTexto-fontFamily);
+    
+    color: var(--navbar-textoLink-color);
+    margin-bottom: 2em;
 }
+
+.tecnologias ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/* section dos projetos */

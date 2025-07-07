@@ -1,13 +1,4 @@
-:root {
-    --titulo-fontFamily: "Montserrat", sans-serif;
-    --texto-fontFamily: "Lato", sans-serif;
-    --texto-color: #c2c2d6;
-    --titulo-color: #f1f1f1;
-    --textoDestaque-color: #1D1933;
-    --backgroundLinkHover: rgba(121, 105, 214, 0.19);
-    --backgroundButton-color: #7969D6;
-    --backgroundButtonActive-color: #7969d68e;
-}
+@import url("variaveis.css");
 
 @keyframes DescerTexto {
     0% {
@@ -34,8 +25,7 @@
 }
 
 body {
-    background: #1D1933;
-    background: linear-gradient(180deg, rgba(29, 25, 51, 1) 8%, rgba(117, 102, 207, 1) 42%, rgba(121, 105, 214, 1) 100%);
+    background: var(--body-fundo-background);
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -71,17 +61,17 @@ li:hover {
 #navbar a {
     padding: .5em;
 
-    font-family: var(--texto-fontFamily);
+    font-family: var(--subTexto-fontFamily);
     font-weight: 400;
     font-size: 1rem;
-    color: var(--texto-color);
+    color: var(--navbar-textoLink-color);
     
     text-decoration: none;
     transition: .3s background-color;
 }
 
 #navbar a:hover {
-    background-color: var(--backgroundLinkHover);
+    background-color: var(--navbar-fundoLinkHover-background);
     border-radius: 7px;
     transform: translateY(-100px);
 }
@@ -98,7 +88,7 @@ li:hover {
     width: 2.5em;
     height: 1.8em;
 
-    background-color: var(--backgroundButton-color);
+    background-color: var(--trocarModo-fundoBotao-background);
     outline: none;
     border: none;
     cursor: pointer;
@@ -112,11 +102,11 @@ li:hover {
 }
 
 .trocarModo:active {
-    background-color: var(--backgroundButtonActive-color);
+    background-color: var(--trocarModo-fundoBotaoActive-background);
 }
 
 .trocarModo i {
-    color: var(--texto-color);
+    color: var(--trocarModo-iconeCor-color);
 }
 
 /* section de boas vindas */
@@ -128,8 +118,8 @@ li:hover {
     justify-content: center;
     align-items: center;
 }
-
-#welcome-section span {
+    
+#welcome-section h1 {
     font-size: 1rem;
     font-weight: 100;
     font-family: var(--titulo-fontFamily);
@@ -139,6 +129,26 @@ li:hover {
 }
 
 #welcome-section .destaque {
-    color: var(--textoDestaque-color);
+    color: var(--welcomeSection-tituloDestaque-color);
     font-weight: 700;
+}
+
+/* section Falando sobre mim */
+#apresentacao {
+    height: 100vh;
+}
+
+#apresentacao h2 {
+    font-family: var(--titulo-fontFamily);
+    font-weight: 300;
+    font-size: 2rem;
+
+    color: var(--subTitulo-color);
+
+    text-align: center;
+    padding-top: 1em;
+}
+
+.tecnologias img {
+    width: 50px;
 }

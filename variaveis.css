@@ -1,0 +1,13 @@
+:root {
+    --body-fundo-background: #11011c;
+    --navbar-textoLink-color: #c2c2d6;
+    --navbar-fundoLinkHover-background: rgba(121, 105, 214, 0.19);
+    --trocarModo-fundoBotao-background: #7969D6;
+    --trocarModo-fundoBotaoActive-background: #7969d68e;
+    --trocarModo-iconeCor-color: #c2c2d6;
+    --welcomeSection-tituloDestaque-color: #1D1933;
+    --titulo-fontFamily: "Montserrat", sans-serif;
+    --subTexto-fontFamily: "Lato", sans-serif;
+    --titulo-color: #f1f1f1;
+    --subTitulo-color: #f1f1f1;
+}

@@ -163,7 +163,7 @@ li:hover {
     font-size: .9rem;
     font-family: var(--subTexto-fontFamily);
     
-    color: var(--navbar-textoLink-color);
+    color: var(--texto-color);
     margin-bottom: 2em;
 }
 
@@ -174,3 +174,33 @@ li:hover {
 }
 
 /* section dos projetos */
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    margin-top: 1.8em;
+}
+
+article figure img {
+    height: 8.5em;
+    cursor: pointer;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption {
+    background-color: #1e0033;
+    text-align: center;
+    width: 17.624em;
+    color: var(--texto-color);
+}
+
+figcaption a {
+    color: var(--welcomeSection-tituloDestaque-color);
+    text-decoration: none;
+}

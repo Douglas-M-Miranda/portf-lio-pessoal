@@ -254,3 +254,70 @@ footer {
     color: var(--textoDestaque-color);
     text-decoration: none;
 }
+
+@media (min-width: 37.5rem) {
+    #navbar a {
+        font-size: 1.4rem;
+    }
+
+    .header button {
+        width: 3em;
+        height: 2em;
+        right: 10px;
+    }
+
+    #welcome-section h1 {
+        font-size: 1.5rem;
+    }
+
+    #apresentacao h2 {
+        font-size: 2.5rem;
+    }
+
+    .resumo p {
+        font-size: 1rem;
+    }
+
+    #projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    figcaption {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    .tecnologias ul {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    article figure img {
+        width: 85%;
+    }
+
+    figcaption {
+        width: 85%;
+    }
+}
+
+@media (min-width: 76.5rem) {
+    .tecnologias img {
+        width: 3.5rem;
+    }
+    
+    article figure img {
+        width: 75%;
+    }
+
+    figcaption {
+        width: 75%;
+    }
+}

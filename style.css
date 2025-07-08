@@ -219,3 +219,38 @@ figcaption a {
     text-decoration: none;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 1em;
+
+    background-color: var(--apresentacao-fundo-background);
+}
+
+.redesSociais span {
+    font-size: 1rem;
+    font-weight: lighter;
+    font-family: var(--subTexto-fontFamily);
+    
+    color: var(--subTitulo-color);
+}
+
+.redesSociais i {
+    font-size: 2em;
+    margin-left: .2em;
+    color: #1e0033;
+}
+
+.creditos {
+    font-size: .8em;
+    font-family: var(--subTexto-fontFamily);
+    color: var(--texto-color);
+    text-align: center;
+}
+
+.creditos a {
+    color: var(--textoDestaque-color);
+    text-decoration: none;
+}

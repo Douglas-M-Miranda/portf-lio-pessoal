@@ -140,7 +140,7 @@ li:hover {
 
 /* section Falando sobre mim */
 #apresentacao {
-    height: 100vh;
+    min-height: 100vh;
     width: 95vw;
     margin: auto;
     background-color: var(--apresentacao-fundo-background);
@@ -157,6 +157,18 @@ li:hover {
 
     text-align: center;
     margin-bottom: .5em;
+
+}
+
+#apresentacao h3 {
+    font-family: var(--titulo-fontFamily);
+    font-weight: 100;
+    font-size: 1.5rem;
+
+    color: var(--subTitulo-color);
+
+    text-align: center;
+    margin: .9em 0;
 }
 
 .resumo p {
@@ -179,12 +191,7 @@ li:hover {
     flex-direction: column;
     align-items: center;
     gap: 1.5em;
-    margin-top: 1.8em;
-}
-
-article figure img {
-    height: 8.5em;
-    cursor: pointer;
+    margin-top: 1.8em; 
 }
 
 figure {
@@ -193,14 +200,22 @@ figure {
     align-items: center;
 }
 
+article figure img {
+    width: 100%;    
+    cursor: pointer;
+}
+
 figcaption {
-    background-color: #1e0033;
     text-align: center;
-    width: 17.624em;
+    width: 100%;
+    background-color: #1e0033;
     color: var(--texto-color);
+    font-family: var(--subTexto-fontFamily);
+    color: var(--texto-color);    
 }
 
 figcaption a {
     color: var(--welcomeSection-tituloDestaque-color);
     text-decoration: none;
 }
+
